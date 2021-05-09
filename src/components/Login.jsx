@@ -20,6 +20,7 @@ const Login = () => {
     } catch (error) {
       console.error(error);
       if (error.response) {
+        console.log('RESPONSE => ', error.response);
         console.error('Error: ', error.response.data);
         setErrorMessage(error.response.data);
       }
